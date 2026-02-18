@@ -1,0 +1,18 @@
+<!-- WYSZUKIWANIE I ZAMIANA ZNAKÓW W DACIE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Wyrażenia regularne - szukanie daty i zmiana znaków</h3>
+    <script>
+        tekst="Sucha Beskidzka, 02.11.2022r";
+        let wzorzec=/\./g;
+        var newText=tekst.replace(wzorzec,'/');
+        document.writeln(newText)
+    </script>
+</body>
+</html>

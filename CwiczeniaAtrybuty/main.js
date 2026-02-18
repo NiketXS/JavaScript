@@ -1,10 +1,13 @@
-// //wyszykuje atrybut input i przypisuje go do zmiennej input
-// let input = document.querySelector('input');
-// //ustawia "type" na password
-// input.setAttribute('type','password');
+//WYSZUKIWANIE ZNACZNIKA INPUT I PRZYPISANIE GO DO ZMIENNEJ INPUT
+let input = document.querySelector('input');
 
-// let img = document.querySelector('img');
-// img.setAttribute('width','500')
+//USTAWIANIE INPUTA NA RODZAJ PASSWORD
+input.setAttribute('type','password');
 
+//USTAWIA SZCZEROKOŚĆ OBRAZKA NA 500
+let img = document.querySelector('img');
+img.setAttribute('width','500')
+
+//ZMIANA ZAWARTOŚCI NAGŁÓWKA NA NOWĄ WARTOŚĆ
 let h1 = document.querySelector('h1');
 h1.innerHTML = "nowy nagłówek"

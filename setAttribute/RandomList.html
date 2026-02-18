@@ -1,0 +1,28 @@
+<!-- DODAWANIE ELEMENTÓW DO LISTY I WYBIERANIE ICH LOSOWO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Marchew</li>
+        <li>Brzoskwinia</li>
+        <li>Borówki</li>
+    </ul>
+    <button onclick="adding()">Dodaj element do listy</button>
+</body>
+<script>
+    document.querySelector("#list").addEventListener("click", adding);
+
+    let produkty = ["Rajtuzy","Kiełbasy","Groszek","Kebab","Kilo myszy","Kaszka"];
+
+    function adding() {
+        let x = document.querySelector("#list");
+        let losowy = produkty[Math.floor(Math.random() * produkty.length)];
+        x.innerHTML = `<li>${losowy}</li>`;
+    }
+</script>
+</html>
