@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Ukrywanie akapitów</h1>
+    <p>Akapit 1</p>
+    <p>Akapit 2</p>
+    <p>Akapit 3</p>
+    <script> 
+        $(function(){
+            $("p").dblclick(function(){  //$ odpowiada document.querySelector
+                $(this).hide();          // dblclick - reaguje na podwójne kliknięcie
+            })
+        });
+    </script>
+</body>
+</html>
