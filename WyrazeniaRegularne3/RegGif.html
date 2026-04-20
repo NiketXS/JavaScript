@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Wyszukiwanie kodu pocztowego</p>
+    <script>
+        let tekst="ikona jest w logo.gif";
+        var gifRegex=/\S*\.gif/i;
+        var pozycja = tekst.search(gifRegex)
+        document.writeln(tekst + "<br>") 
+        document.writeln(tekst.slice(pozycja));
+    </script>
+</body>
+</html>
