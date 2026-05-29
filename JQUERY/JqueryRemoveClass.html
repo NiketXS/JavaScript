@@ -10,17 +10,18 @@
     <script>
        $(function($){
            $("#przycisk").click(function(){
-               $("p").addClass("red");
+               $("p").addClass("red");  // dodawanie klasy red
            })
            $("#unprzycisk").click(function(){
-               $("p").removeClass("red");
+               $("p").removeClass("red");  //usuwanie klasy red
            })
        })
     </script>
     <style>
         .red{color:red}
     </style>
-    <p>This is paragraph</p>
+    <p>Tojest paragraf
+    </p>
     <button id="przycisk">Dodaj styl</button>
     <button id="unprzycisk">Usuń styl</button>
 </body>
