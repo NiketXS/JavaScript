@@ -1,0 +1,35 @@
+<!-- UTWORZENIE PASKA Z PODPOWIEDZIA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tooltip">Najedz na mnie</div>
+    <span class="tooltiptext">Jakis tekst</span>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltiptext{
+            visibility: hidden;
+            width: 130%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hoover .tooltiptext {
+            visibility: visible;
+        }
+    </style>
+</body>
+</html>

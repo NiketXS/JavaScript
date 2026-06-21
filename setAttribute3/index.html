@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="test">To jest DIV
+        <button onclick="border()">Dodaj krawędź</button>
+     </div>
+</body>
+<script>
+    document.querySelector("#test").addEventListener("mclick",border)
+
+    function border(){
+        x = document.querySelector("#test");
+        x.setAttribute("style","border: 3px solid red")
+    }
+</script>
+</html>
