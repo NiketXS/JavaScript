@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+<div>
+<input type="text" id="fname" onchange="myFunction()" placeholder="Wpisz swoje imię">
+</div>
+
+<script>
+function myFunction(){
+  let x = document.querySelector("#fname");
+  console.log(x.value);
+  let newElement = document.createElement("p") ;
+  newElement.textContent = "Imię" ;
+  x.before(newElement) ;
+};
+</script>
+</body>
+</html>

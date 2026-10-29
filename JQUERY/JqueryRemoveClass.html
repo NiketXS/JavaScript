@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+       $(function($){
+           $("#przycisk").click(function(){
+               $("p").addClass("red");  // dodawanie klasy red
+           })
+           $("#unprzycisk").click(function(){
+               $("p").removeClass("red");  //usuwanie klasy red
+           })
+       })
+    </script>
+    <style>
+        .red{color:red}
+    </style>
+    <p>Tojest paragraf
+    </p>
+    <button id="przycisk">Dodaj styl</button>
+    <button id="unprzycisk">Usuń styl</button>
+</body>
+</html>
