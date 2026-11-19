@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Wyszukiwanie elementów</h1>
+    <h1 id="header">Wyszukiwanie elementów po ID</h1>
+    <h1 class="header">Wyszukiwanie elementów po klasie</h1>
+    <h1 data="header">Wyszukiwanie ze znacznikiem</h1>
+    <script>
+     const test1 = document.querySelector("h1"); // Definiujemy wyszukanie elementu ze znacznikiem h1
+     console.log(test1); // Zwraca całą zawartość znacznika h1 wraz z nim
+     console.log(test1.innerHTML);  // Dopiska .innerHTML zwraca wyłącznie wewnętrzną zawartość znaczników
+     
+     const test2 = document.querySelector("#header") // Definiujemy wyszukanie elementu z ID = "header"
+     console.log(test2); // Zwraca całą zawartość znacznika h1 wraz z nim
+     console.log(test2.innerHTML); // Dopiska .innerHTML zwraca wyłącznie wewnętrzną zawartość znaczników
+
+     const test3 = document.querySelector(".header")
+     console.log(test3);
+     console.log(test3.innerHTML);
+
+     const test4 = document.querySelector("header")
+     console.log(test4.getAttribute("data"))
+    </script>
+</body>
+</html>
